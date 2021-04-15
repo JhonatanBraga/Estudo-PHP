@@ -11,7 +11,7 @@
 
     // Neste exemplo, o valor que está sendo recebido, está sendo inserido pela URL. Após o PHP é inserido ? + variável + valor
 
-    //http://localhost/estudophp/operadores_atribuicao.php?p=75
+    // http://localhost/estudophp/operadores_atribuicao.php?p=75
 
 /*
         echo "<br/>Exemplo de adição:";
@@ -31,12 +31,23 @@
     echo "<br/> O preço do produto com o desconto de 10%, fica em R$" . number_format($preco, 2);
 */
 
-    //http://localhost/estudophp/Estudo-PHP/operadores_atribuicao.php?a=2020
+    # http://localhost/estudophp/Estudo-PHP/operadores_atribuicao.php?a=2020
     echo "<br/> Exemplo de Pré Decremento e Pós decremento:";
     $atual = $_GET ["a"];
     echo "<br/> O ano atual é $atual e o ano anterior é " .--$atual;
 
 
+    # Variável de variável ou variável variantes
+
+    /*
+    $site = "estudocurso";
+    $$site = "cursoPHP";
+
+    Nesse caso, quando utilizado o $ antes de uma variável, o servidor irá criar uma nova variável, porém com o nome da antiga, sendo assim, essa nova variável irá receber o valor atriuído á ela.
+
+    # $site - variável 1
+    # $estudocurso - variável 2
+    */
     
     ?>
 </body>
