@@ -13,21 +13,31 @@
 
     //http://localhost/estudophp/operadores_atribuicao.php?p=75
 
-    // Exemplo de adição
+/*
+        echo "<br/>Exemplo de adição:";
         $preco = $_GET["p"];
         echo "O preço do produto é R$" .number_format($preco, 2);
         $preco += ($preco*10/100);
         echo "<br/> E o novo preço com 10% de aumento sera R$" . number_format( $preco, 2);
-
+        echo "<br/>";
     // . number_format (variável + 2). Essa expressão é para concatenação, o valor ao lado da variável, informa quantas casas decimais vem após o valor recebido    
 
-    // Exemplo de subtração
 
+
+    echo "<br/>Exemplo de subtração:";
     $preco = $_GET["p"];
     echo "<br/> O preço do produto é R$" . number_format($preco, 2);
     $preco -= ($preco*10/100);
     echo "<br/> O preço do produto com o desconto de 10%, fica em R$" . number_format($preco, 2);
+*/
 
+    //http://localhost/estudophp/Estudo-PHP/operadores_atribuicao.php?a=2020
+    echo "<br/> Exemplo de Pré Decremento e Pós decremento:";
+    $atual = $_GET ["a"];
+    echo "<br/> O ano atual é $atual e o ano anterior é " .--$atual;
+
+
+    
     ?>
 </body>
 </html>
